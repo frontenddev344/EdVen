@@ -89,7 +89,7 @@ em, i { font-family: 'Vollkorn', serif; }
 .history-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px;
+    gap: 34px;
     max-width: 1400px;
     margin: 0 auto;
     justify-content: space-between;
