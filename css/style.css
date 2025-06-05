@@ -28,6 +28,15 @@ em, i { font-family: 'Vollkorn', serif; }
     background-repeat: no-repeat;
     background-size: cover;
 }
+.venue-hover-bg {
+    display: none;
+}
+.venue-card:hover .venue-logo {
+    display: none;
+}
+.venue-card:hover .venue-hover-bg {
+    display: block;
+}
 /*
 .hero-overlay {
   background: rgba(0,0,0,0.55);
@@ -45,6 +54,9 @@ em, i { font-family: 'Vollkorn', serif; }
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+}
+.header-center-badge.mobile-only {
+    display: none;
 }
 .nav-pills .nav-link { background: #3a4a2b; color: #fff; margin: 0 5px; border-radius: 20px; }
 .nav-pills .nav-link.active { background: #4e5e3a; }
@@ -421,20 +433,21 @@ header.custom-header-absolute {
   position: absolute;
   top: 24px;
   right: 24px;
-  background: #fff;
+    background: transparent;
   border: none;
-  font-size: 2.5rem;
-  color: #23271a;
+    font-size: 60px;
+    color: rgba(159, 155, 237, 1);
   z-index: 201;
   cursor: pointer;
   line-height: 1;
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    box-shadow: none;
   align-items: center;
   justify-content: center;
   transition: background 0.2s, color 0.2s;
+    font-weight: bold;
 }
 .header-close:hover, .header-close:focus {
   background: #23271a;
@@ -815,9 +828,489 @@ section.map-section {
   transition-delay: 0.4s;
 }
 
+/* MGT Inner Page Header Styles */
+.mgt-header {
+    background: rgba(220, 209, 191, 1);
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+.mgt-header-row {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    min-height: 70px;
+    max-width: 1920px;
+    margin: auto;
+}
+.mgt-header-badge {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #b8b09a;
+  min-width: 220px;
+}
+.mgt-header-badge-title {
+  color: #3a4a2b;
+  font-size: 1.6rem;
+  font-family: 'Rubik Mono One', Arial, sans-serif;
+  text-align: center;
+  line-height: 1.1;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.mgt-header-badge-italic {
+  font-style: italic;
+  font-family: inherit;
+}
+.mgt-header-link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(125, 116, 102, 1);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-right: 1px solid rgba(125, 116, 102, 1);
+    min-width: 120px;
+    min-height: 70px;
+    transition: background 0.2s, color 0.2s;
+    background: transparent;
+    line-height: 114.99999999999999%;
+    padding: 30px 15px;
+}
+.mgt-header-badge a img {
+    width: 100%;
+    max-width: 100%;
+}
+.mgt-header-badge a {
+    width: 62%;
+}
+.mgt-header-link:hover,
+.mgt-header-link:focus {
+  background: #d6cfb7;
+  color: #3a4a2b;
+}
+.mgt-header-wave {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+}
+.mgt-header-wave-img {
+  max-width: 48px;
+
+}
+
+/* MGT Hero Banner Styles */
+.mgt-hero {
+    position: relative;
+    background: #3a1313 url('../images/mgt-hero.png') center/cover no-repeat;
+    border-radius: 41px;
+    margin: 10px auto 0 auto;
+    max-width: 1920px;
+    min-height: 420px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    overflow: hidden;
+    z-index: 1;
+    width: calc(100% - 20px);
+}
+.mgt-hero-inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    padding: 80px 48px 80px 48px;
+    min-height: 420px;
+}
+.mgt-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 900px;
+  z-index: 2;
+}/*
+.mgt-hero-badge {
+  display: inline-block;
+  border: 2px solid #c5c695;
+  color: #c5c695;
+  border-radius: 32px;
+  font-family: 'Rubik Mono One', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 4px 22px 2px 22px;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  background: rgba(58,19,19,0.7);
+}*/
+.mgt-hero-title {
+  font-family: 'Averia Serif Libre', serif;
+  font-size: 100px;
+  font-weight: 700;
+  color: #d6d6a1;
+  margin: 0 0 18px 0;
+  line-height: 1.05;
+  letter-spacing: 0.5px;
+}
+.mgt-hero-subtitle {
+    font-size: 35px;
+    color: #f5f2e7;
+    margin-bottom: 28px;
+    margin-top: 0;
+    font-weight: 400;
+    font-family: "Vollkorn", serif;
+}
+.mgt-hero-btn {
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #c5c695;
+    border-radius: 32px;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 11px 40px 10px 40px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    position: relative;
+    font-family: "Vollkorn", serif;
+    line-height: normal;
+}
+.mgt-hero-btn:hover, .mgt-hero-btn:focus {
+  background: #c5c695;
+  color: #3a1313;
+}
+.mgt-hero-image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    max-width: 101px;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+.mgt-hero-image img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+}
+.mgt-hero-bg {
+  display: none;
+}
+
+/* MGT Menu Section Styles */
+.mgt-menu-section {
+    background: #35386a;
+    /* border-radius: 16px; */
+    margin: 10px auto 0 auto;
+    /* max-width: 980px; */
+    padding: 100px 0;
+    text-align: center;
+    color: #e6e6d6;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+.mgt-menu-images {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 32px; */
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.mgt-menu-img {
+    width: 32%;
+    /* height: 180px; */
+    /* object-fit: cover; */
+    border-radius: 28px;
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.10); */
+    background: #222;
+}
+.mgt-menu-texts {
+    margin: 0 auto 50px auto;
+    max-width: 944px;
+}
+.mgt-menu-desc {
+    font-family: 'Vollkorn', serif;
+    font-size: 25px;
+    color: rgba(194, 185, 163, 1);
+    margin-bottom: 18px;
+    margin-top: 0;
+    line-height: 114.99999999999999%;
+}
+.mgt-menu-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+.mgt-menu-btn {
+  display: inline-block;
+  border: 2px solid #e6e6d6;
+  color: #e6e6d6;
+  background: transparent;
+  border-radius: 32px;
+  font-family: 'Vollkorn', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 10px 32px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 8px;
+}
+.mgt-menu-btn:hover, .mgt-menu-btn:focus {
+  background: #e6e6d6;
+  color: #35386a;
+}
+/* MGT Catering & Events Section Styles */
+.mgt-catering-section {
+    position: relative;
+    background-color: #f0ebe5;
+    overflow: hidden;
+    padding: 64px 0 30px 0;
+    z-index: 1;
+    background-image: url(../images/curv-inner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+
+.mgt-catering-section .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-bottom: 0;
+}
+.mgt-catering-topicon img {
+    width: 140px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.mgt-catering-title {
+    font-family: 'Averia Serif Libre', serif;
+    font-size: 75px;
+    font-weight: 700;
+    color: rgba(66, 14, 13, 1);
+    margin-bottom: 18px;
+    margin-top: 0;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+.mgt-catering-subtitle {
+    font-family: 'Vollkorn', serif;
+    font-size: 25px;
+    color: rgba(66, 14, 13, 1);
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 114.99999999999999%;
+    margin-top: 30px;
+}
+.mgt-catering-descs {
+    max-width: 770px;
+    margin: 0 auto 24px auto;
+}
+.mgt-catering-desc {
+    font-family: 'Vollkorn', serif;
+    font-size: 22px;
+    color: rgba(66, 14, 13, 1);
+    margin-bottom: 10px;
+    margin-top: 0;
+    line-height: 114.99999999999999%;
+}
+.mgt-catering-btn {
+    display: inline-block;
+    background: #c5c695;
+    color: rgba(45, 45, 94, 1);
+    border: 2px solid rgba(45, 45, 94, 1);
+    border-radius: 32px;
+    font-family: 'Vollkorn', serif;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 12px 50px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    margin: 24px 0 32px 0;
+    line-height: normal;
+}
+.mgt-catering-btn:hover, .mgt-catering-btn:focus {
+  background: #35386a;
+  color: #c5c695;
+}
+.mgt-catering-bags {
+    margin: 0 auto;
+    margin-bottom: 0;
+    max-width: 1200px;
+    z-index: 2;
+    position: relative;
+}
+.mgt-catering-bags img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* MGT Wedding Section Styles */
+.mgt-wedding-section {
+    background: #4a1515;
+    position: relative;
+    padding: 150px 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.mgt-wedding-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    /* max-width: 1200px; */
+    /* min-height: 600px; */
+}
+.mgt-wedding-content {
+    flex: 1 1 50%;
+    max-width: 44%;
+    color: #d6d6a1;
+    padding: 150px 0 32px 0;
+    z-index: 2;
+    text-align: left;
+}
+.mgt-wedding-title {
+    font-family: 'Averia Serif Libre', serif;
+    font-size: 75px;
+    font-weight: 700;
+    color: #d6d6a1;
+    margin-bottom: 18px;
+    margin-top: 0;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.mgt-wedding-descs {
+  margin-bottom: 28px;
+}
+.mgt-wedding-desc {
+    font-family: 'Vollkorn', serif;
+    font-size: 25px;
+    color: rgba(197, 198, 149, 1);
+    margin-bottom: 16px;
+    margin-top: 0;
+    line-height: 114.99999999999999%;
+    font-weight: 400;
+}
+.mgt-wedding-desc-p {
+    color: rgba(240, 235, 229, 1);
+    font-family: 'Vollkorn', serif;
+    font-size: 25px;
+    margin-bottom: 16px;
+    margin-top: 0;
+    line-height: 114.99999999999999%;
+    font-weight: 400;
+}
+.mgt-wedding-descs, .mgt-wedding-title {
+    max-width: 556px;
+}
+.mgt-wedding-btn {
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #d6d6a1;
+  border-radius: 32px;
+  font-family: 'Vollkorn', serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 12px 40px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  margin-top: 18px;
+}
+.mgt-wedding-btn:hover, .mgt-wedding-btn:focus {
+  background: #d6d6a1;
+  color: #4a1515;
+}
+.mgt-wedding-images {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 32px;
+    z-index: 2;
+    margin-top: 32px;
+    padding-left: 20px;
+    position: relative;
+}
+.mgt-wedding-img {
+  border-radius: 41px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  object-fit: cover;
+  background: #222;
+}
+.mgt-wedding-img-couple {
+    width: 100%;
+    margin-bottom: 18px;
+    max-width: 650px;
+    margin-right: -50px;
+}
+.mgt-wedding-img-girl {
+    width: 100%;
+    /* height: 320px; */
+    /* margin-right: 48px; */
+    max-width: 450px;
+    margin: -139px auto 0px 40px;
+    position: relative;
+    z-index: 1;
+}
+.mgt-wedding-leaf {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+.mgt-wedding-leaf-1 {
+  top: 0;
+  left: 0;
+  width: 220px;
+}
+.mgt-wedding-leaf-2 {
+    bottom: 31%;
+    right: 0px;
+    width: 100%;
+    max-width: 300px;
+}
+.mgt-wedding-leaf img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* MGT Hours Section Styles */
+.mgt-hours-section {
+    background: rgba(30, 10, 11, 1);
+    padding: 100px 0;
+    text-align: center;
+}
+.mgt-hours-text {
+    color: rgba(194, 185, 163, 1);
+    font-family: 'Vollkorn', serif;
+    font-size: 25px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.mgt-header.active .mgt-header-row {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  
+/******Responsive*****/
 
 
-/***********/
 @media (max-width: 1449px) {
 .header-pill {
 
@@ -886,7 +1379,7 @@ section.map-section {
 
 }
 .footer-newsletter-btn {
-
+    padding: 15px 14px;
     font-size: 16px;
  
 }
@@ -953,11 +1446,62 @@ section.map-section {
     width: 70%;
 
 }
+.mgt-hero-title {
+    font-size: 60px;
+}
+.mgt-hero-subtitle {
+    font-size: 28px;
+}
+.mgt-hero-content {
+    max-width: 720px;
+}
+
+.mgt-hero-btn,.mgt-catering-btn {
+    font-size: 20px;
+
+}
+.mgt-menu-desc,.mgt-catering-subtitle {
+    font-size: 22px;
+}
+.mgt-catering-title,.mgt-wedding-title {
+    font-size: 50px;
+}
+.mgt-wedding-desc,.mgt-wedding-desc-p {
+    font-size: 18px;
+}
+.mgt-wedding-img-girl {
+    width: 66%;
+    margin: -139px auto 0px 0px;
+}
+.mgt-wedding-leaf-2 {
+    bottom: 26%;
+    right: 0;
+    width: 100%;
+    max-width: 246px;
+}
+.mgt-hours-text {
+    font-size: 20px;
+}
 }
 
 
 @media (max-width: 991px) {
-
+    .header-center-badge.desktop-only {
+        display: none;
+    }
+    .mgt-header-badge.desktop-only {
+        display: none;
+    }
+    header.mgt-header.active button.mgt-header-hamburger {
+        display: none;
+    }
+    .header-center-badge.mobile-only {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
       .footer-links-divider {
         display: none;
       }
@@ -1008,7 +1552,7 @@ section.map-section {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(220, 209, 191, 0.98);
+        background-color: rgba(70, 74, 202, 1);
         z-index: 1000;
         transform: translateY(-100%);
         transition: transform 0.3s, opacity 0.3s;
@@ -1016,6 +1560,10 @@ section.map-section {
         pointer-events: none;
         padding-top: 80px;
         overflow-y: auto;
+        background-image: url("../images/menu-bg.png");
+        background-position: bottom right;
+        background-size: cover;
+        background-repeat: no-repeat;
       }
       .header-nav.open {
         transform: translateY(0);
@@ -1040,21 +1588,7 @@ section.map-section {
     }
       .header-close {
         display: flex !important;
-        position: absolute;
-        top: 24px;
-        right: 24px;
-        z-index: 2002;
-        background: #fff;
-        border-radius: 50%;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-        width: 48px;
-        height: 48px;
-        align-items: center;
-        justify-content: center;
-        font-size: 2.5rem;
-        color: #23271a;
-        border: none;
-        cursor: pointer;
+       
       }
       .header-center-badge {
         margin: 24px 0;
@@ -1141,14 +1675,27 @@ section.map-section {
            
         }
         .header-pill {
-            background: rgba(27, 28, 16, 1);
+            background: transparent;
+            border-radius: 0;
+            border: 0;
+            width: 100%;
+            text-align: left;
+            color: rgba(240, 235, 229, 1);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 40px;
+            max-width: 100%;
+            margin: 0;
+        }
+        .header-pill br {
+            display: none;
         }
         .header-pill:before,.header-pill:after{display: none!important;}
         .header-center-badge a, .header-center-badge a img {
             display: block;
             width: 100%;
             max-width: 100%;
-            border-radius: 10px;
+        
         }
         .section-title {
             font-size: 80px;
@@ -1193,6 +1740,136 @@ section.map-section {
         .section-subtitle {
             font-size: 16px;
         }
+        .mgt-header-hamburger {
+            display: flex;
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            z-index: 2001;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            width: 44px;
+            height: 44px;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 3px;
+        }
+      .mgt-header-hamburger span {
+        display: block;
+        width: 26px;
+        height: 4px;
+        background: #23271a;
+        border-radius: 2px;
+        transition: 0.3s;
+      }
+      .mgt-header-row {
+        flex-direction: column;
+        min-height: unset;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(70, 74, 202, 1);
+        z-index: 1000;
+        transform: translateY(-100%);
+        transition: transform 0.3s, opacity 0.3s;
+        opacity: 0;
+        pointer-events: none;
+        background-image: url(../images/menu-bg.png);
+        padding-top: 80px;
+        overflow-y: auto;
+        background-position: bottom right;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+      .mgt-header-row.mgt-header-open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .mgt-header-badge, .mgt-header-link, .mgt-header-wave {
+        border-right: none;
+        border-bottom: 1px solid #b8b09a;
+        min-width: unset;
+        min-height: 50px;
+        background: transparent;
+        border-radius: 0;
+        border: 0;
+        width: 100%;
+        color: rgba(240, 235, 229, 1);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 40px;
+        max-width: 100%;
+        margin: 0;
+        text-align: left;
+        padding: 11px 20px;
+        justify-content: flex-start;
+    }
+    .mgt-header-wave {
+        display: none;
+    }
+    .mgt-header-link br {
+        display: none;
+    }
+      .mgt-header-link:last-of-type, .mgt-header-wave {
+        border-bottom: none;
+      }
+    
+      .mgt-hero-content {
+        max-width: 100%;
+        margin-bottom: 18px;
+      }
+     
+      
+      .mgt-menu-img {
+        /* width: 180px; */
+        /* height: 120px; */
+        border-radius: 18px;
+    }
+      .mgt-menu-buttons {
+        gap: 16px;
+      }
+      .mgt-hero {
+        background-position: 76% 100%;
+    }
+    .mgt-wedding-content {
+        flex: 100%;
+        max-width: 100%;
+        color: #d6d6a1;
+        padding: 0;
+      
+    }
+    .mgt-wedding-images {
+        flex: 100%;
+        padding-left: 0;
+      
+    }
+    .mgt-wedding-container {
+        flex-direction: column;
+    }
+    .mgt-wedding-descs, .mgt-wedding-title {
+        max-width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .mgt-header-hamburger {
+      display: none;
+    }
+    .mgt-header-row {
+      position: static;
+      flex-direction: row;
+      opacity: 1;
+      pointer-events: auto;
+      transform: none;
+      height: auto;
+      padding-top: 0;
+        }
 }
 @media (max-width: 767px) {
     .intro-title {
@@ -1208,7 +1885,20 @@ section.map-section {
     .section-title {
         font-size: 42px;
     }
-    
+    .mgt-wedding-section {
+        padding: 100px 0;
+    }
+      .mgt-wedding-content {
+        padding: 12px 0 0 0;
+      }
+  
+      .mgt-wedding-img-couple {
+        width: 85%;
+        margin-right: 0;
+    }
+    .mgt-hours-section {
+        padding: 50px 0;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1234,8 +1924,8 @@ section.map-section {
   }
   .header-pill {
     min-width: 120px;
-    font-size: 1rem;
-    max-width: 90vw;
+    font-size: 24px;
+    
   }
   .intro-highlight-box {
     padding-left: 14px;
@@ -1296,5 +1986,74 @@ section.map-section {
 .footer-links-group {
     flex-direction: column;
 }
+
+  .mgt-header-link {
+    font-size: 24px;
 }
+.mgt-hero-title {
+    font-size: 50px;
+}
+  .mgt-hero-badge {
+    font-size: 0.9rem;
+    padding: 2px 12px 2px 12px;
+  }
+  .mgt-hero-image img {
+    max-width: 120px;
+  }
+  .mgt-menu-section {
+    /* padding: 18px 2px 12px 2px; */
+    /* margin: 24px 2px 0 2px; */
+}
+ 
+  .mgt-menu-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mgt-catering-btn {
+    font-size: 1rem;
+    padding: 8px 18px;
+  }
+  .mgt-hours-section {
+    padding: 18px 0 14px 0;
+  }
+  .mgt-hours-text {
+    font-size: 15px;
+  }
+  .mgt-catering-title, .mgt-wedding-title {
+    font-size: 40px;
+}
+}
+
+
+@media (max-width: 575px) {
+.mgt-hero-inner {
+    padding: 80px 20px;
+}
+.mgt-hero-title {
+    font-size: 32px;
+}
+.mgt-hero-subtitle {
+    font-size: 18px;
+}
+.mgt-hero-btn, .mgt-catering-btn,.mgt-wedding-btn {
+    font-size: 16px;
+}
+.mgt-menu-desc, .mgt-catering-subtitle,
+.mgt-catering-desc,
+.mgt-wedding-desc, .mgt-wedding-desc-p {
+    font-size: 16px;
+}
+.mgt-catering-topicon img {
+    width: 110px;
+}
+.mgt-catering-title, .mgt-wedding-title {
+    font-size: 26px;
+}
+.mgt-wedding-leaf-2 {
+   
+    max-width: 167px;
+}
+}
+
 
