@@ -2623,6 +2623,11 @@ section.mapple-section.catering-section-snd .right-warp {
     }
 }
 }
+@media (min-width: 992px) {
+    .mgt-header-hamburger {
+        display: none;
+    }
+}
 @media (max-width: 600px) {
 .custom-footer {
     border-left: 0;
