@@ -1339,6 +1339,7 @@ section.map-section {
     line-height: 100%;
     margin-top: 15px;
     margin-bottom: 70px;
+    text-align: center;
 }
 .contact-banner-img {
     width: 100%;
@@ -1417,6 +1418,11 @@ section.map-section {
     letter-spacing: 1px;
     transition: background 0.2s;
     margin-top: 30px;
+}
+
+.contact-edven-form-btn:hover {
+    background: rgba(194, 185, 163, 1);
+    color: rgba(77, 81, 48, 1);
 }
 /******Responsive*****/
 
@@ -1591,6 +1597,16 @@ section.map-section {
 }
 .mgt-hours-text {
     font-size: 20px;
+}
+.contact-banner-subtitle {
+    font-size: 24px;
+}
+.contact-banner-title {
+    font-size: 70px;
+
+}
+.contact-banner-img {
+    width: 75%;
 }
 }
 
@@ -2009,6 +2025,23 @@ section.map-section {
     .mgt-hours-section {
         padding: 50px 0;
     }
+    .contact-banner-title {
+        font-size: 50px;
+    }
+    .contact-banner-subtitle {
+        font-size: 20px;
+    }
+    section.contact-banner-section {
+        padding: 110px 20px 100px 20px;
+    }
+    .contact-edven-form-group label {
+        font-size: 16px;
+
+    }
+    .contact-edven-form-btn {
+        font-size: 16px;
+      
+    }
 }
 
 @media (max-width: 600px) {
@@ -2132,6 +2165,23 @@ section.map-section {
   }
   .mgt-catering-title, .mgt-wedding-title {
     font-size: 40px;
+}
+.contact-edven-form-row {
+    flex-wrap: wrap;
+}
+.contact-banner-subtitle {
+    font-size: 18px;
+    text-align: center;
+}
+.contact-banner-title {
+    font-size: 41px;
+}
+.contact-banner-img {
+
+    margin: 0 auto -105px auto;
+}
+.contact-banner-title {
+    font-size: 36px;
 }
 }
 
