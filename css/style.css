@@ -1582,7 +1582,7 @@ section.mapple-section {
     /* padding-top: 30px; */
     /* padding-bottom: 30px; */
     position: relative;
-    font-weight: 400;
+    font-weight: 600;
     text-align: right;
 }
 .daily-img-lft img {
@@ -1699,10 +1699,130 @@ span.bagde-head span {
 .mvm-hero-image img {
     width: 100%;
 }
+.catering-hero-main .mgt-hero.catering-hero {
+    margin: 0 auto;
+    width: 100%;
+}
+.catering-hero-main {
+    padding: 10px;
+    background: rgba(159, 155, 237, 1);
+}
+.mgt-hero.catering-hero {
+    position: relative;
+    background: rgba(70, 74, 202, 1) url(../images/catering-bg.png) center / cover no-repeat;
+    border-radius: 41px;
+    margin: 10px auto 0 auto;
+    max-width: 1920px;
+    min-height: 420px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+    z-index: 1;
+}
+.mgt-hero.catering-hero  .mgt-hero-title {
+    font-family: 'Rubik';
+    color: rgba(220, 209, 191, 1);
+    text-transform: uppercase;
+}
+.catering-hero-main .mgt-hero-image {
+    max-width: 320px;
+}
+.catering-hero-main .mgt-hero-content {
+    max-width: 1000px;
+}
+
+section.catering-hero-main .mgt-hero-subtitle {
+    color: rgba(246, 236, 220, 1);
+    font-family: 'Roboto';
+    font-size: 32px;
+}
+section.mapple-section.catering-section-snd .fst-row:after {
+    background: rgba(246, 236, 220, 1);
+}
+section.mapple-section.catering-section-snd .right-warp {
+    height: 100%;
+    padding: 150px 0;
+}
+section.mapple-section.catering-section-snd .maple-text-right-inner h2:after {
+    background: rgba(159, 155, 237, 1);
+}
+section.mapple-section.catering-section-snd .maple-text-right-inner h2 {
+    color: rgba(70, 74, 202, 1);
+}
+section.mapple-section.catering-section-snd .daily-text-right-inner p {
+    color: rgba(77, 81, 48, 1);
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+section.mapple-section.catering-section-snd .daily-text-right-inner {
+    max-width: 100%;
+    padding-left: 10%;
+}
+section.mapple-section.catering-section-snd  .trd-row {
+    max-width: 1188px;
+    position: relative;
+    z-index: 1;
+}
+section.mapple-section.catering-section-snd .trd-row {
+    margin-top: -104px;
+}
+section.mapple-section.catering-section-snd .maple-img-right {
+    padding-right: 12%;
+}
+section.mapple-section.catering-section-snd .book-btn-warp {
+    margin-top: 0;
+    text-align: left;
+}
+section.mapple-section.catering-section-snd .book-btn-warp .mgt-catering-btn {
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: rgba(70, 74, 202, 1);
+    border-color: rgba(70, 74, 202, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section.mapple-section.catering-section-snd .trd-row .daily-img-right {
+    max-width: 450px;
+    margin-left: auto;
+}
+section.mapple-section.catering-section-snd .book-btn-warp .mgt-catering-btn:hover {
+    color: #c5c695;
+    border-color: #c5c695;
+}
+section.mapple-section.catering-section-snd {
+    background: rgba(255, 246, 235, 1);
+    padding-bottom: 150px;
+}
+section.mapple-section.catering-section-snd {
+    overflow: visible;
+}
+.maple-img-top {
+    width: 100%;
+    position: absolute;
+    z-index: 22222;
+    top: -9rem;
+    right: -4rem;
+    max-width: 38%;
+}
+.mp-wrap {
+    overflow: hidden;
+}
+.img-top-wrap {
+    position: relative;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /******Responsive*****/
 
 
 @media (max-width: 1449px) {
+    .maple-img-top {
+    
+        right: 0;
+
+    }
 .header-pill {
 
     margin: 0px 15px;
@@ -1909,6 +2029,29 @@ p.mvm-hero-subtitle {
 .maple-text-right-inner h2, .daily-text-right-inner h2{
     
     font-size: 34px;
+}
+section.catering-hero-main .mgt-hero-subtitle {
+    font-size: 28px;
+}
+section.mapple-section.catering-section-snd  .trd-row {
+    width: 90%;
+}
+section.mapple-section.catering-section-snd .daily-text-right-inner {
+    padding-left: 5%;
+}
+section.mapple-section.catering-section-snd .daily-text-right-inner p {
+   
+    font-size: 16px;
+}
+.catering-hero-main .mgt-hero-image {
+    max-width: 230px;
+}
+.maple-img-top {
+    top: -3rem;
+    max-width: 34%;
+}
+section.mapple-section.catering-section-snd .right-warp {
+    padding: 100px 0;
 }
 }
 @media (max-width: 991px) {
@@ -2313,7 +2456,30 @@ p.mvm-hero-subtitle {
     .book-inner-content h2 {
         margin: 30px 0 18px 0;
     }
-}
+    section.mapple-section.catering-section-snd .trd-row {
+        flex-direction: column;
+    }
+    section.mapple-section.catering-section-snd .daily-text-right-inner {
+        padding-left: 0;
+        width: 100%;
+    }
+    section.mapple-section.catering-section-snd .trd-row .col-md-7 {
+        max-width: 100%;
+        flex: 100%;
+        width: 100%;
+    }
+    section.mapple-section.catering-section-snd .trd-row {
+        width: 100%;
+        margin-top: -20px;
+    }
+    section.mapple-section.catering-section-snd .trd-row .daily-img-right {
+      
+        margin-bottom: 40px;
+    }
+    .snd-row {
+        margin-top: -168px;
+    }
+    
 @media (min-width: 992px) {
     .mgt-header-hamburger {
       display: none;
@@ -2422,6 +2588,40 @@ p.mvm-hero-subtitle {
         padding-bottom: 80px;
    
     }
+    section.catering-hero-main .mgt-hero-title {
+        font-size: 48px;
+    }
+    section.catering-hero-main .mgt-hero-subtitle {
+        font-size: 20px;
+    }
+    section.mapple-section.catering-section-snd .fst-row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .maple-img-top {
+       
+        max-width: 56%;
+    }
+    section.mapple-section.catering-section-snd .right-warp {
+        padding: 0;
+    }
+    section.mapple-section.catering-section-snd .fst-row .maple-img-left {
+        width: 60%;
+    }
+    section.mapple-section.catering-section-snd .maple-img-right {
+        padding: 0;
+    }
+    section.mapple-section.catering-section-snd .trd-row .daily-img-right {
+        max-width: 100%;
+        margin-left: auto;
+        width: 100%;
+        margin-right: auto;
+    }
+    section.mapple-section.catering-section-snd {
+       
+        padding-bottom: 80px;
+    }
+}
 }
 @media (max-width: 600px) {
 .custom-footer {
@@ -2618,6 +2818,16 @@ span.bagde-head {
 }
 .book-inner-head img {
     width: 50px;
+}
+section.catering-hero-main .mgt-hero-title {
+    font-size: 32px;
+}
+section.catering-hero-main .mgt-hero-subtitle {
+    font-size: 18px;
+}
+section.mapple-section.catering-section-snd .trd-row {
+
+    margin-top: 0;
 }
 }
 
