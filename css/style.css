@@ -3692,6 +3692,13 @@ section.mvm-hero-section.cvc-hero-section .mvm-hero-title, .ready-book-title {
 .footer-links-list {
     width: 100%;
 }
+.ready-book-title .left-dot-shap {
+    top: -14px;
+    left: 26px;
+}
+.ready-book-title .right-dot-shap img {
+    top: -14px;
+}
 }
 
 
