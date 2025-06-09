@@ -72,7 +72,7 @@
                 <div class="right-warp">
                     <div class="right-warp-inner" data-aos="fade-up" data-aos-delay="100">
                         <div class="right-warp-inner-content">
-                            <p class="maple-desc">At Maple & Vine Market, we bring together local heritage and global flavor. From Western Maryland’s most refined wine selection to house-made meals, small-batch provisions, and regional favorites, everything is thoughtfully chosen for its quality and taste. </p>
+                            <p class="maple-desc">At Maple & Vine Market, we bring together local heritage and global flavor. From Western Maryland's most refined wine selection to house-made meals, small-batch provisions, and regional favorites, everything is thoughtfully chosen for its quality and taste. </p>
                             <p class="maple-desc"> Whether you're restocking the pantry, planning the perfect pairing, or enjoying an afternoon of wine tasting, Maple & Vine Market is your go-to destination.</p>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
             </div>
             <div class="col-md-7">
                 <div class="maple-text-right-inner" data-aos="fade-up" data-aos-delay="100">
-                    <h2><span>Chef Martin’s PROVISIONS</span></h2>
+                    <h2><span>Chef Martin's PROVISIONS</span></h2>
                 </div>
             </div>
         </div>
@@ -126,7 +126,7 @@
                 </div>
                 <div class="book-inner-content" data-aos="fade-up" data-aos-delay="100">
                     <h2>Want to book a <br>private event?</h2>
-                    <p>We do onsite and offsite events, from bachelorette parties to team building, and we love sharing our wine knowledge! For beginners, to advanced, we can customize our tasting options for all palettes, and include  everything from charcuterie or paired hors d’oeuvres, to dinners of up to seven courses.</p>
+                    <p>We do onsite and offsite events, from bachelorette parties to team building, and we love sharing our wine knowledge! For beginners, to advanced, we can customize our tasting options for all palettes, and include everything from charcuterie or paired hors d'oeuvres, to dinners of up to seven courses.</p>
                     <div class="book-btn-warp">
                         <a href="#" class="book-btn">CHAT WITH OUR TEAM</a>
                     </div>
@@ -193,5 +193,52 @@
       2025 © Edventures Hospitality
     </div>
   </footer>
+  <!-- Newsletter Modal -->
+  <div class="newsletter-modal" id="newsletter-modal" style="display:none;">
+    <div class="newsletter-modal-content" data-aos="zoom-in">
+      <button class="newsletter-modal-close" id="close-newsletter-modal" aria-label="Close">&times;</button>
+      <div class="newsletter-modal-left">
+        <img src="images/pop-img.png" alt="Newsletter" />
+      </div>
+      <div class="newsletter-modal-right">
+        <h2 class="newsletter-modal-title">HUNGRY<br>TO STAY IN<br>THE KNOW?</h2>
+        <p class="newsletter-modal-desc">Get fresh deals, cozy stays, and local happenings right to your inbox!</p>
+        <form class="newsletter-modal-form">
+          <input type="email" class="newsletter-modal-input" placeholder="Email Address" required />
+          <button type="submit" class="newsletter-modal-submit">Submit</button>
+        </form>
+        <div class="newsletter-modal-legal">By clicking continue, you consent to receiving email marketing from Edventures Hospitality</div>
+      </div>
+    </div>
+  </div>
+  <script>
+  // Newsletter Modal JS
+  const openNewsletterBtn = document.querySelector('.footer-newsletter-btn');
+  const closeNewsletterBtn = document.getElementById('close-newsletter-modal');
+  const newsletterModal = document.getElementById('newsletter-modal');
+  if(openNewsletterBtn && closeNewsletterBtn && newsletterModal) {
+    openNewsletterBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      newsletterModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+    closeNewsletterBtn.addEventListener('click', function() {
+      newsletterModal.style.display = 'none';
+      document.body.style.overflow = '';
+    });
+    window.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        newsletterModal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+    newsletterModal.addEventListener('click', function(e) {
+      if (e.target === newsletterModal) {
+        newsletterModal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+  }
+  </script>
 </body>
 </html> 

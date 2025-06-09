@@ -48,8 +48,8 @@
         <div class="mgt-hero-image" data-aos="fade-right" data-aos-delay="300">
             <img src="images/mg-logo.png" alt="Wine and Grapes Illustration" />
           </div>
-        <h1 class="mgt-hero-title" data-aos="fade-up" data-aos-delay="400">We’re happy to <br>bring MGT to you!</h1>
-        <p class="mgt-hero-subtitle" data-aos="fade-up" data-aos-delay="500">From bespoke wedding options, to office luncheons, and curated Chef pairing dinners at your vacation house - the options are endless! </p>
+        <h1 class="mgt-hero-title" data-aos="fade-up" data-aos-delay="400">We're happy to <br>bring MGT to you!</h1>
+        <p class="mgt-hero-subtitle" data-aos="fade-up" data-aos-delay="500">From bespoke wedding options, to office luncheons, and curated Chef pairing dinners at your vacation house - the options are endless! </p>
         <a href="#" class="btn" data-aos="zoom-in" data-aos-delay="600">Chat With Our Team</a>
       </div>
       
@@ -69,7 +69,7 @@
                     <div class="right-warp-inner" data-aos="fade-up" data-aos-delay="100">
                         <div class="right-warp-inner-content">
                             <p class="maple-desc">Onsite events include anniversary celebrations, birthday parties, retirement dinners and more! </p>
-                            <p class="maple-desc">Whether our menu favorites, or a custom menu we’re excited to be part of your big moments.</p>
+                            <p class="maple-desc">Whether our menu favorites, or a custom menu we're excited to be part of your big moments.</p>
                         </div>
                     </div>
                 </div>
@@ -164,6 +164,53 @@
       once: true,
       offset: 60
     });
+  </script>
+  <!-- Newsletter Modal -->
+  <div class="newsletter-modal" id="newsletter-modal" style="display:none;">
+    <div class="newsletter-modal-content" data-aos="zoom-in">
+      <button class="newsletter-modal-close" id="close-newsletter-modal" aria-label="Close">&times;</button>
+      <div class="newsletter-modal-left">
+        <img src="images/pop-img.png" alt="Newsletter" />
+      </div>
+      <div class="newsletter-modal-right">
+        <h2 class="newsletter-modal-title">HUNGRY<br>TO STAY IN<br>THE KNOW?</h2>
+        <p class="newsletter-modal-desc">Get fresh deals, cozy stays, and local happenings right to your inbox!</p>
+        <form class="newsletter-modal-form">
+          <input type="email" class="newsletter-modal-input" placeholder="Email Address" required />
+          <button type="submit" class="newsletter-modal-submit">Submit</button>
+        </form>
+        <div class="newsletter-modal-legal">By clicking continue, you consent to receiving email marketing from Edventures Hospitality</div>
+      </div>
+    </div>
+  </div>
+  <script>
+  // Newsletter Modal JS
+  const openNewsletterBtn = document.querySelector('.footer-newsletter-btn');
+  const closeNewsletterBtn = document.getElementById('close-newsletter-modal');
+  const newsletterModal = document.getElementById('newsletter-modal');
+  if(openNewsletterBtn && closeNewsletterBtn && newsletterModal) {
+    openNewsletterBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      newsletterModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+    closeNewsletterBtn.addEventListener('click', function() {
+      newsletterModal.style.display = 'none';
+      document.body.style.overflow = '';
+    });
+    window.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        newsletterModal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+    newsletterModal.addEventListener('click', function(e) {
+      if (e.target === newsletterModal) {
+        newsletterModal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+  }
   </script>
 </body>
 </html> 

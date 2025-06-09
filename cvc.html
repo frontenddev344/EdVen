@@ -208,7 +208,7 @@
         </div>
         <div class="col-lg-6 col-md-12 footer-links-col ">
             <div class="footer-newsletter-col mb-4 mb-lg-0 text-center">
-                <a href="#" class="footer-newsletter-btn">Join Our Email List</a>
+                <a href="#" class="footer-newsletter-btn" id="open-newsletter-modal">Join Our Email List</a>
                 <span class="footer-newsletter-desc">Get fresh deals, cozy stays, and local happenings right to your inbox!</span>
               </div>
           <div class="footer-links-group d-flex">
@@ -231,6 +231,54 @@
       2025 © Edventures Hospitality
     </div>
   </footer>
+
+<!-- Newsletter Modal -->
+<div class="newsletter-modal" id="newsletter-modal" style="display:none;">
+  <div class="newsletter-modal-content" data-aos="zoom-in">
+    <button class="newsletter-modal-close" id="close-newsletter-modal" aria-label="Close">&times;</button>
+    <div class="newsletter-modal-left">
+      <img src="images/pop-img.png" alt="Newsletter" />
+    </div>
+    <div class="newsletter-modal-right">
+      <h2 class="newsletter-modal-title">HUNGRY<br>TO STAY IN<br>THE KNOW?</h2>
+      <p class="newsletter-modal-desc">Get fresh deals, cozy stays, and local happenings right to your inbox!</p>
+      <form class="newsletter-modal-form">
+        <input type="email" class="newsletter-modal-input" placeholder="Email Address" required />
+        <button type="submit" class="newsletter-modal-submit">Submit</button>
+      </form>
+      <div class="newsletter-modal-legal">By clicking continue, you consent to receiving email marketing from Edventures Hospitality</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Newsletter Modal JS
+const openNewsletterBtn = document.getElementById('open-newsletter-modal');
+const closeNewsletterBtn = document.getElementById('close-newsletter-modal');
+const newsletterModal = document.getElementById('newsletter-modal');
+openNewsletterBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+  newsletterModal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+});
+closeNewsletterBtn.addEventListener('click', function() {
+  newsletterModal.style.display = 'none';
+  document.body.style.overflow = '';
+});
+window.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    newsletterModal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+});
+newsletterModal.addEventListener('click', function(e) {
+  if (e.target === newsletterModal) {
+    newsletterModal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+});
+</script>
+
   <script src="js/mgt-header.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
