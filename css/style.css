@@ -3429,6 +3429,23 @@ section.mapple-section.catering-section-snd .right-warp {
     .cottage1-info-title {
         font-size: 18px;
     }
+    .newsletter-modal-content {
+        flex-direction: column;
+        min-width: 0;
+        max-width: 98vw;
+        min-height: 0;
+      }
+      .newsletter-modal-left, .newsletter-modal-right {
+        width: 100%;
+        min-width: 0;
+        min-height: 120px;
+      }
+      .newsletter-modal-right {
+        padding: 32px 16px 24px 16px;
+      }
+      .newsletter-modal-title {
+        font-size: 28px;
+      }
 }
 @media (min-width: 992px) {
     .mgt-header-hamburger {
@@ -3672,25 +3689,10 @@ section.mvm-hero-section.cvc-hero-section .mvm-hero-title, .ready-book-title {
 
     font-size: 16px;
 }
+.footer-links-list {
+    width: 100%;
+}
 }
 
-@media (max-width: 767px) {
-  .newsletter-modal-content {
-    flex-direction: column;
-    min-width: 0;
-    max-width: 98vw;
-    min-height: 0;
-  }
-  .newsletter-modal-left, .newsletter-modal-right {
-    width: 100%;
-    min-width: 0;
-    min-height: 120px;
-  }
-  .newsletter-modal-right {
-    padding: 32px 16px 24px 16px;
-  }
-  .newsletter-modal-title {
-    font-size: 28px;
-  }
-}
+
 
