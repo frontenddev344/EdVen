@@ -295,24 +295,25 @@
     z-index: 2;
     }
     .header-pill {
-    color: rgba(220, 209, 191, 1);
-    border: 2px solid rgba(220, 209, 191, 1);
-    border-radius: 47px;
-    padding: 10px 28px;
-    margin: 0 50px;
-    font-size: 18px;
-    text-align: center;
-    min-width: 193px;
-    min-height: 42px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: background 0.2s, color 0.2s;
-    text-decoration: none;
-    position: relative;
-    z-index: 2;
-    line-height: 114.99999999999999%;
-    font-family: "Roboto", sans-serif;
+        color: rgba(220, 209, 191, 1);
+        border: 2px solid rgba(220, 209, 191, 1);
+        border-radius: 47px;
+        padding: 10px 28px;
+        margin: 0 50px;
+        font-size: 18px;
+        text-align: center;
+        min-width: 193px;
+        min-height: 42px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: background 0.2s, color 0.2s;
+        text-decoration: none;
+        position: relative;
+        z-index: 2;
+        line-height: 114.99999999999999%;
+        font-family: "Roboto", sans-serif;
+        max-width: 150px;
     }
     .header-pill:hover,
     .header-pill:focus {
