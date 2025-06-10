@@ -955,13 +955,14 @@
     background: rgba(58,19,19,0.7);
     }*/
     .mgt-hero-title {
-    font-family: 'Averia Serif Libre', serif;
-    font-size: 100px;
-    font-weight: 700;
-    color: #d6d6a1;
-    margin: 0 0 18px 0;
-    line-height: 1.05;
-    letter-spacing: 0.5px;
+        font-family: 'Averia Serif Libre', serif;
+        font-size: 100px;
+        font-weight: 700;
+        color: #d6d6a1;
+        margin: 0 0 18px 0;
+        line-height: 1.05;
+        letter-spacing: 0.5px;
+        max-width: 848px;
     }
     .mgt-hero-subtitle {
     font-size: 35px;
@@ -1010,14 +1011,14 @@
 
     /* MGT Menu Section Styles */
     .mgt-menu-section {
-    background: #35386a;
-    /* border-radius: 16px; */
-    margin: 10px auto 0 auto;
-    /* max-width: 980px; */
-    padding: 100px 0;
-    text-align: center;
-    color: #e6e6d6;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+        background: rgba(45, 45, 94, 1);
+        /* border-radius: 16px; */
+        margin: 10px auto 0 auto;
+        /* max-width: 980px; */
+        padding: 100px 0;
+        text-align: center;
+        color: #e6e6d6;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
     }
     .mgt-menu-images {
     display: flex;
@@ -1027,12 +1028,12 @@
     flex-wrap: wrap;
     }
     .mgt-menu-img {
-    width: 32%;
-    /* height: 180px; */
-    /* object-fit: cover; */
-    border-radius: 28px;
-    /* box-shadow: 0 2px 8px rgba(0,0,0,0.10); */
-    background: #222;
+        width: 32%;
+        /* height: 180px; */
+        /* object-fit: cover; */
+        border-radius: 28px;
+        /* box-shadow: 0 2px 8px rgba(0,0,0,0.10); */
+        /* background: #222; */
     }
     .mgt-menu-texts {
     margin: 0 auto 50px auto;
@@ -1161,11 +1162,11 @@
 
     /* MGT Wedding Section Styles */
     .mgt-wedding-section {
-    background: #4a1515;
-    position: relative;
-    padding: 150px 0;
-    overflow: hidden;
-    z-index: 1;
+        background: rgba(66, 14, 13, 1);
+        position: relative;
+        padding: 150px 0;
+        overflow: hidden;
+        z-index: 1;
     }
     .mgt-wedding-container {
     display: flex;
@@ -1180,7 +1181,7 @@
     flex: 1 1 50%;
     max-width: 44%;
     color: #d6d6a1;
-    padding: 150px 0 32px 0;
+    padding: 80px 0 32px 0;
     z-index: 2;
     text-align: left;
     }
@@ -2714,6 +2715,10 @@ section.mapple-section.catering-section-snd .right-warp {
     .header-center-badge.desktop-only {
         display: none;
     }
+    body a.header-pill.last-pill {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .mgt-header-badge.desktop-only {
         display: none;
     }
@@ -3061,7 +3066,7 @@ section.mapple-section.catering-section-snd .right-warp {
         gap: 16px;
       }
       .mgt-hero {
-        background-position: 76% 100%;
+        background-position: 76% 100% !important;
     }
     .mgt-wedding-content {
         flex: 100%;
