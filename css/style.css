@@ -849,12 +849,12 @@
     margin: auto;
     }
     .mgt-header-badge {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid #b8b09a;
-    min-width: 220px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid rgba(125, 116, 102, 1);
+        min-width: 220px;
     }
     .mgt-header-badge-title {
     color: #3a4a2b;
@@ -3054,25 +3054,25 @@ section.mapple-section.catering-section-snd .right-warp {
     .mgt-header-link br {
         display: none;
     }
-      .mgt-header-link:last-of-type, .mgt-header-wave {
+    .mgt-header-link:last-of-type, .mgt-header-wave {
         border-bottom: none;
       }
     
-      .mgt-hero-content {
+    .mgt-hero-content {
         max-width: 100%;
         margin-bottom: 18px;
-      }
+    }
      
       
-      .mgt-menu-img {
+    .mgt-menu-img {
         /* width: 180px; */
         /* height: 120px; */
         border-radius: 18px;
     }
-      .mgt-menu-buttons {
+    .mgt-menu-buttons {
         gap: 16px;
-      }
-      .mgt-hero {
+    }
+    .mgt-hero {
         background-position: 76% 100% !important;
     }
     .mgt-wedding-content {
@@ -3153,19 +3153,19 @@ section.mapple-section.catering-section-snd .right-warp {
       .cottage1-info-blocks {
        width: 100%;
       }
-      .cottage1-info-wrapper {
+    .cottage1-info-wrapper {
         flex-direction: column;
         align-items: center;
         gap: 18px;
         padding: 24px 20px 0 20px;
       }
-      .cottage1-img-large {
+    .cottage1-img-large {
         margin-right: 0;
         margin-bottom: 18px;
         max-width: 100%;
         height: 220px;
       }   
-      section.mvm-hero-section.cvc-hero-section .mvm-hero-subtitle {
+    section.mvm-hero-section.cvc-hero-section .mvm-hero-subtitle {
         font-size: 22px;
     }  
     section.mvm-hero-section.cvc-hero-section .mvm-hero-title, .ready-book-title {
