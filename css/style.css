@@ -2428,6 +2428,10 @@
         background: #23271a;
         color: #fff;
     }
+    section.mapple-section .daily-text-right-inner h2 {
+        max-width: 300px;
+        margin-left: auto;
+    }
 /******Responsive*****/
 
 
@@ -2540,6 +2544,9 @@ section.mvm-hero-section.cvc-hero-section .mvm-hero-subtitle {
     
     min-width: 112px;
     max-width: 112px;
+}
+.mvm-hero-title {
+    max-width: 900px;
 }
 a.header-pill.last-pill {
     padding-left: 40px;
@@ -3667,8 +3674,8 @@ p.mvm-hero-subtitle {
     font-size: 20px;
 }
 .daily-img-lft {
-    bottom: -20rem;
-
+    bottom: -13rem;
+    width: 55%;
 }
 span.bagde-head {
     border-radius: 8px;
