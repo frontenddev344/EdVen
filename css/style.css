@@ -2280,7 +2280,10 @@
     /* Newsletter Modal Styles */
     .newsletter-modal {
         position: fixed;
-        top: 0; left: 0; right: 0; bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         width: 100vw;
         height: 100vh;
         background: rgba(44, 48, 32, 0.75);
@@ -2289,6 +2292,8 @@
         align-items: center;
         justify-content: center;
         transition: opacity 0.3s;
+        overflow: auto;
+        padding: 30px 0;
     }
     .newsletter-modal-content {
         display: flex;
@@ -3210,6 +3215,9 @@ section.mapple-section.catering-section-snd .right-warp {
     .intro-title {
         font-size: 30px;
     }
+    .newsletter-modal-left img {
+        height: 200px;
+    }
     .intro-desc {
         font-size: 16px;
     }
@@ -3710,6 +3718,40 @@ section.mvm-hero-section.cvc-hero-section .mvm-hero-title, .ready-book-title {
     top: -14px;
 }
 }
-
+@media (max-width: 400px) {
+.newsletter-modal-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.newsletter-modal-desc {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-bottom: 11px;
+}
+.newsletter-modal-input, .newsletter-modal-submit {
+    font-size: 14px;
+    padding: 9px;
+}
+.newsletter-modal-left img {
+    height: 140px;
+}
+.newsletter-modal-right {
+    padding: 21px 16px 15px 16px;
+}
+.newsletter-modal-close {
+    top: 10px;
+    right: 10px;
+    font-size: 38px;
+    width: 36px;
+    height: 36px;
+    background: #000;
+}
+.newsletter-modal-form {
+    margin-bottom: 10px;
+}
+.newsletter-modal-legal {
+    font-size: 11px;
+}
+}
 
 
